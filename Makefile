@@ -44,14 +44,6 @@ $(MDBOOK): $(BIN_DIR) $(MDBOOK_SHARE)
 docs-build: docs-generate $(MDBOOK) ## Build the kconnect book
 	$(MDBOOK) build $(BOOKS_DIR)
 
-.PHONY: docs-verify
-docs-verify: docs-generate ## Verify the generated docs are up to date
-	cd $(BOOKS_DIR)/src/commands
-	@if !(git diff --quiet HEAD ); then \
-		git diff; \
-		echo "generated command docs are out of date, run make docs-generate"; exit 1; \
-	fi
-
 .PHONY: docs-serve
 docs-serve: $(MDBOOK) ## Run a local webserver with the compiled book
 	$(MDBOOK) serve $(BOOKS_DIR)
