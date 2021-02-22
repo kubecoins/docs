@@ -41,7 +41,7 @@ $(MDBOOK): $(BIN_DIR) $(MDBOOK_SHARE)
 
 
 .PHONY: docs-build
-docs-build: docs-generate $(MDBOOK) ## Build the kconnect book
+docs-build: $(MDBOOK) ## Build the book
 	$(MDBOOK) build $(BOOKS_DIR)
 
 .PHONY: docs-serve
