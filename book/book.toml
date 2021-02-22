@@ -1,0 +1,10 @@
+[book]
+authors = ["The Kubecoins Maintainers"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Kubecoins - a sample crypto miner for Kubernetes"
+
+[output.html]
+curly-quotes = true
+git-repository-url = "https://github.com/kubecoins/docs"
