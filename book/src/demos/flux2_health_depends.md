@@ -5,11 +5,11 @@ This demo is used to show the following features of Flux2:
 * Health Checks
 * Dependencies
 
-The key takeway's of this demo are to show that these 2 features can be used to ensure that services are started in order in a predictable way.
+The key takeaways of this demo are to show that these 2 features can be used to ensure that services are started in order in a predictable way.
 
 ## Setup
 
-1. For the [flux-nonprod-clusters](https://github.com/kubecoins/flux-nonprod-clusters) repo.
+1. Fork the [flux-nonprod-clusters](https://github.com/kubecoins/flux-nonprod-clusters) repo.
 
 2. [Create a GitHub Personal Access Token (pat)](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) with the **repo** scope.
 
